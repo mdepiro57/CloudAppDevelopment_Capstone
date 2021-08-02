@@ -27,8 +27,10 @@ APPEND_SLASH = True
 
 ALLOWED_HOSTS = ["localhost",
                  "mdepiro57.us-south.cf.appdomain.cloud",
-            ]
+]
 
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = True
 
 # Application definition
 
@@ -127,8 +129,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_ROOT = os.path.join(STATIC_ROOT, 'media')
 MEDIA_URL = '/media/'
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
 
 if DEBUG:
    INTERNAL_IPS = ('127.0.0.1', 'localhost',)

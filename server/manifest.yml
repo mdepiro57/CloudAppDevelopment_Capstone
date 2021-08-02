@@ -1,10 +1,10 @@
   applications:
-  - name: dealerreview
+  - name: djangoapp
     routes:
       - route: mdepiro57.us-south.cf.appdomain.cloud
     memory: 128M
     buildpack: python_buildpack
-  - name: dealerreview-nginx
+  - name: djangoapp-nginx
     routes:
       - route: mdepiro57.us-south.cf.appdomain.cloud/static
     memory: 128M
